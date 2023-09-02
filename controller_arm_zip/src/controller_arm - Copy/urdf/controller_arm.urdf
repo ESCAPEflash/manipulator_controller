@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="controller_arm">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.2803E-20 0.023701 3.4516E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.43538" />
+      <inertia
+        ixx="0.00041233"
+        ixy="-4.6712E-22"
+        ixz="-1.7771E-23"
+        iyy="0.00060281"
+        iyz="3.3311E-20"
+        izz="0.00041298" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://controller_arm/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.50196 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://controller_arm/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="-5.4817E-16 -0.0094103 0.032873"
+        rpy="0 0 0" />
+      <mass
+        value="0.02903" />
+      <inertia
+        ixx="2.3388E-05"
+        ixy="4.1991E-23"
+        ixz="3.7896E-21"
+        iyy="2.5003E-05"
+        iyz="5.6273E-07"
+        izz="2.4047E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://controller_arm/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.50196 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://controller_arm/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.075"
+      rpy="0 -0.67304 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="10" />
+    <safety_controller
+      soft_upper_limit="1.57"
+      soft_lower_limit="-1.57"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0 0.00058967 0.032873"
+        rpy="0 0 0" />
+      <mass
+        value="0.02903" />
+      <inertia
+        ixx="2.3388E-05"
+        ixy="-5.294E-23"
+        ixz="-2.594E-21"
+        iyy="2.5003E-05"
+        iyz="5.6273E-07"
+        izz="2.4047E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://controller_arm/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.50196 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://controller_arm/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0.075"
+      rpy="-3.1416 -1.331 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="10" />
+    <safety_controller
+      soft_upper_limit="1.57"
+      soft_lower_limit="-157"
+      k_velocity="0" />
+  </joint>
+  <link
+    name="effector">
+    <inertial>
+      <origin
+        xyz="-0.00096419 0.00079519 -0.00067567"
+        rpy="0 0 0" />
+      <mass
+        value="0.017764" />
+      <inertia
+        ixx="3.8244E-06"
+        ixy="2.1154E-07"
+        ixz="-1.7974E-07"
+        iyy="2.3928E-06"
+        iyz="1.2253E-06"
+        izz="2.7937E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://controller_arm/meshes/effector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0 0 0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://controller_arm/meshes/effector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="effector_joint"
+    type="fixed">
+    <origin
+      xyz="0 0.01 0.09225"
+      rpy="-0.86648 0 1.5708" />
+    <parent
+      link="link2" />
+    <child
+      link="effector" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

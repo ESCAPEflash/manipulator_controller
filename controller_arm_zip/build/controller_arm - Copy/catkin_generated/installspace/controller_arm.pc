@@ -1,0 +1,8 @@
+prefix=/home/ujjawal/controller/controller_arm_zip/install
+
+Name: controller_arm
+Description: Description of controller_arm
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
