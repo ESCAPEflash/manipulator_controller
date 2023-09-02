@@ -35,11 +35,11 @@
 /home/ujjawal/controller/controller_arm_zip/build/gtest/googletest/CMakeFiles/test.dir
 /home/ujjawal/controller/controller_arm_zip/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /home/ujjawal/controller/controller_arm_zip/build/gtest/googletest/CMakeFiles/gtest.dir
-/home/ujjawal/controller/controller_arm_zip/build/controller_arm - Copy/CMakeFiles/install/strip.dir
-/home/ujjawal/controller/controller_arm_zip/build/controller_arm - Copy/CMakeFiles/install/local.dir
-/home/ujjawal/controller/controller_arm_zip/build/controller_arm - Copy/CMakeFiles/install.dir
-/home/ujjawal/controller/controller_arm_zip/build/controller_arm - Copy/CMakeFiles/list_install_components.dir
-/home/ujjawal/controller/controller_arm_zip/build/controller_arm - Copy/CMakeFiles/rebuild_cache.dir
-/home/ujjawal/controller/controller_arm_zip/build/controller_arm - Copy/CMakeFiles/edit_cache.dir
-/home/ujjawal/controller/controller_arm_zip/build/controller_arm - Copy/CMakeFiles/test.dir
-/home/ujjawal/controller/controller_arm_zip/build/controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir
+/home/ujjawal/controller/controller_arm_zip/build/controller_arm/CMakeFiles/install/strip.dir
+/home/ujjawal/controller/controller_arm_zip/build/controller_arm/CMakeFiles/install/local.dir
+/home/ujjawal/controller/controller_arm_zip/build/controller_arm/CMakeFiles/install.dir
+/home/ujjawal/controller/controller_arm_zip/build/controller_arm/CMakeFiles/list_install_components.dir
+/home/ujjawal/controller/controller_arm_zip/build/controller_arm/CMakeFiles/rebuild_cache.dir
+/home/ujjawal/controller/controller_arm_zip/build/controller_arm/CMakeFiles/edit_cache.dir
+/home/ujjawal/controller/controller_arm_zip/build/controller_arm/CMakeFiles/test.dir
+/home/ujjawal/controller/controller_arm_zip/build/controller_arm/CMakeFiles/_catkin_empty_exported_target.dir

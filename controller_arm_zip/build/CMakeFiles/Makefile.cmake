@@ -13,10 +13,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
-  "controller_arm - Copy/catkin_generated/package.cmake"
+  "controller_arm/catkin_generated/package.cmake"
   "/home/ujjawal/controller/controller_arm_zip/src/CMakeLists.txt"
-  "/home/ujjawal/controller/controller_arm_zip/src/controller_arm - Copy/CMakeLists.txt"
-  "/home/ujjawal/controller/controller_arm_zip/src/controller_arm - Copy/package.xml"
+  "/home/ujjawal/controller/controller_arm_zip/src/controller_arm/CMakeLists.txt"
+  "/home/ujjawal/controller/controller_arm_zip/src/controller_arm/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
   "/opt/ros/noetic/share/catkin/cmake/assert.cmake"
   "/opt/ros/noetic/share/catkin/cmake/atomic_configure_file.cmake"
@@ -154,7 +154,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "controller_arm - Copy/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "controller_arm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -168,5 +168,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "gtest/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   "gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
+  "controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake"
   )

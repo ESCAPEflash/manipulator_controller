@@ -54,13 +54,13 @@ CMAKE_BINARY_DIR = /home/ujjawal/controller/controller_arm_zip/build
 
 # The main recursive "all" target.
 all: gtest/all
-all: controller_arm\ -\ Copy/all
+all: controller_arm/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
-preinstall: controller_arm\ -\ Copy/preinstall
+preinstall: controller_arm/preinstall
 
 .PHONY : preinstall
 
@@ -71,27 +71,27 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
-clean: controller_arm\ -\ Copy/clean
+clean: controller_arm/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory controller_arm\ -\ Copy
+# Directory level rules for directory controller_arm
 
 # Recursive "all" directory target.
-controller_arm\ -\ Copy/all:
+controller_arm/all:
 
-.PHONY : controller_arm\ -\ Copy/all
+.PHONY : controller_arm/all
 
 # Recursive "preinstall" directory target.
-controller_arm\ -\ Copy/preinstall:
+controller_arm/preinstall:
 
-.PHONY : controller_arm\ -\ Copy/preinstall
+.PHONY : controller_arm/preinstall
 
 # Recursive "clean" directory target.
-controller_arm\ -\ Copy/clean: controller_arm\ -\ Copy/CMakeFiles/_catkin_empty_exported_target.dir/clean
+controller_arm/clean: controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
-.PHONY : controller_arm\ -\ Copy/clean
+.PHONY : controller_arm/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -395,31 +395,31 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir
+# Target rules for target controller_arm/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-controller_arm\ -\ Copy/CMakeFiles/_catkin_empty_exported_target.dir/all:
-	$(MAKE) -f "controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir/build.make" "controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir/depend"
-	$(MAKE) -f "controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir/build.make" "controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir/build"
+controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/build.make controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/build.make controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ujjawal/controller/controller_arm_zip/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
-.PHONY : controller_arm\ -\ Copy/CMakeFiles/_catkin_empty_exported_target.dir/all
+.PHONY : controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-controller_arm\ -\ Copy/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ujjawal/controller/controller_arm_zip/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 "controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir/all"
+	$(MAKE) -f CMakeFiles/Makefile2 controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ujjawal/controller/controller_arm_zip/build/CMakeFiles 0
-.PHONY : controller_arm\ -\ Copy/CMakeFiles/_catkin_empty_exported_target.dir/rule
+.PHONY : controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-_catkin_empty_exported_target: controller_arm\ -\ Copy/CMakeFiles/_catkin_empty_exported_target.dir/rule
+_catkin_empty_exported_target: controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 .PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-controller_arm\ -\ Copy/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	$(MAKE) -f "controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir/build.make" "controller_arm - Copy/CMakeFiles/_catkin_empty_exported_target.dir/clean"
-.PHONY : controller_arm\ -\ Copy/CMakeFiles/_catkin_empty_exported_target.dir/clean
+controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/build.make controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : controller_arm/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
