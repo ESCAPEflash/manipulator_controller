@@ -221,4 +221,36 @@
     <axis
       xyz="0 0 0" />
   </joint>
+
+  <!-- transmission information -->
+   <transmission name="trans1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint1">
+        <hardwareInterface>hardwareInterface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+        <mechanicalReduction>10</mechanicalReduction>
+        <hardwareInterface>hardwareInterface/EffortJointInterface</hardwareInterface>
+    </actuator>
+</transmission>
+
+<transmission name="trans2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint2">
+        <hardwareInterface>hardwareInterface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+        <mechanicalReduction>10</mechanicalReduction>
+        <hardwareInterface>hardwareInterface/EffortJointInterface</hardwareInterface>
+    </actuator>
+</transmission>
+
+<!-- gazebo pluggin -->
+<gazebo>
+  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+    <robotNamespace>/controller_arm</robotNamespace>
+    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+  </plugin>
+</gazebo>
+
 </robot>

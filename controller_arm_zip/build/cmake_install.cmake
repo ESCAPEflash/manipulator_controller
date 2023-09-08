@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ujjawal/controller/controller_arm_zip/build/gtest/cmake_install.cmake")
+  include("/home/ujjawal/controller/controller_arm_zip/build/pid/cmake_install.cmake")
   include("/home/ujjawal/controller/controller_arm_zip/build/controller_arm/cmake_install.cmake")
 
 endif()

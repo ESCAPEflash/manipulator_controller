@@ -1,2 +1,2 @@
-controller_arm
+controller_arm:pid
 -DCATKIN_DEVEL_PREFIX=/home/ujjawal/controller/controller_arm_zip/devel -DCMAKE_INSTALL_PREFIX=/home/ujjawal/controller/controller_arm_zip/install -G Unix Makefiles
