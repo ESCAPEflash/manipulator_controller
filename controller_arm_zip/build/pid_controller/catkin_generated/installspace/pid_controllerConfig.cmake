@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ujjawal/controller/controller_arm_zip/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ujjawal/controller/controller_arm_zip/install/lib;/home/ujjawal/controller/controller_arm_zip/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -185,7 +185,7 @@ foreach(t ${pid_controller_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "controller_manager")
+set(depends "roscpp;controller_interface;hardware_interface;transmission_interface;control_msgs;controller_manager_msgs;pluginlib")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

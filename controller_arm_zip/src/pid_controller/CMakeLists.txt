@@ -8,7 +8,13 @@ project(pid_controller)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED
-controller_manager    
+controller_manager
+controller_interface
+  hardware_interface
+  transmission_interface
+  control_msgs
+  controller_manager_msgs
+  pluginlib    
 )
 
 ## System dependencies are found with CMake's conventions
@@ -106,7 +112,13 @@ catkin_package(
 #  LIBRARIES pid_controller
 #  CATKIN_DEPENDS other_catkin_pkg
 #  DEPENDS system_lib
-    controller_manager
+roscpp
+controller_interface
+hardware_interface
+transmission_interface
+control_msgs
+controller_manager_msgs
+pluginlib
 )
 
 ###########
